@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+figure, caption,
+table, th, td,
+hr {
+    margin: 0;
+}
+
+
+button,
+select, optgroup,
+textarea, input {
+    border-radius: 0;
+    outline: 0;
+}
+
+button,
+html [type='button'],
+[type='reset'], [type='submit'],
+textarea, input:not([type=radio]):not([type=checkbox]) {
+    -webkit-appearance: none;
+}
+
+li, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
