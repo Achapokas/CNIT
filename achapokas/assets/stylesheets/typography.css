@@ -38,12 +38,11 @@ a {
   font-size: 48px;
   text-decoration: none;
   padding-bottom: 16px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #303443;
 }
 
 a:hover {
   font-style: italic;
-  border-bottom: 1px solid black;
 }
 
 li {
