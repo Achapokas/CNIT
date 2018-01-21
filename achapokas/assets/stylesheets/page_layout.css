@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    #PAGE-LAYOUT
+\*------------------------------------*/
+
+.page-layout {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.grid {
+  padding: 16px 0;
+}
+
+  .grid-cell {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }

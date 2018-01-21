@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+
+html {
+  font-family: sans-serif;
+  background-color: #faf5f0;
+}
+
+body {
+  color: #303443;
+}
+
+h1 {
+  padding: 16px 0 96px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+
+a {
+  display: block;
+  color: #303443;
+  font-size: 48px;
+  text-decoration: none;
+  padding-bottom: 16px;
+  border-bottom: 1px solid black;
+}
+
+a:hover {
+  font-style: italic;
+  border-bottom: 1px solid black;
+}
+
+li {
+  font-size: 32px;
+}
