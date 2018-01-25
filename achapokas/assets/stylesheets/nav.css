@@ -1,0 +1,25 @@
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+
+header {
+  padding: 16px 0 96px;
+}
+
+  nav {
+    display: inline-block;
+  }
+
+    nav a {
+      display: inline-block;
+      padding: 0 16px;
+      font-size: 30px;
+      border-bottom: 0;
+    }
+
+    header h1 {
+      display: inline-block;
+      float: right;
+    }

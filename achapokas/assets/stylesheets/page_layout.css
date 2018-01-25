@@ -11,6 +11,10 @@
   margin-bottom: 22px;
 }
 
+.page-layout--homepage h1 {
+  padding: 16px 0 96px;
+}
+
 @media(min-width: 960px)  {
   .page-layout--homepage a {
     margin-bottom: 0;
