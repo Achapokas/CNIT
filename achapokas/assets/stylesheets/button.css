@@ -1,0 +1,13 @@
+
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+button {
+  padding: 12px;
+  background: #303443;
+  color: #FFF;
+  letter-spacing: 1px;
+  border: 0;
+  text-transform: uppercase;
+}

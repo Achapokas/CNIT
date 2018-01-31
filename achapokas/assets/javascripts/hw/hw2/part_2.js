@@ -1,5 +1,6 @@
 function Calculate() {
   const form = document.getElementById("calculator"),
+        container = document.getElementById('container'),
         findInputs = form.querySelectorAll("input"),
         first = Math.floor(findInputs[0].value),
         second = Math.floor(findInputs[1].value),
@@ -14,28 +15,39 @@ function Calculate() {
         min = (n, m, o) => Math.min(n, m ,o);
         max = (n, m ,o) => Math.max(n, m, o);
 
-        const markup = `
-        <p>
-          <span>Sum:</span>
-          <span>${summation(first, second, third)}</span>
-        </p>
-        <p>
-          <span>Average:</span>
-          <span>${median(first, second, third)}</span>
-        </p>
-        <p>
-          <span>Product:</span>
-          <span>${multiply(first, second, third)}</span>
-        </p>
-        <p>
-          <span>Smallest Number:</span>
-          <span>${max(first, second, third)}</span>
-        </p>
-        <p>
-          <span>Largest Number:</span>
-          <span>${min(first, second, third)}</span>
-        </p>
+        const result = `
+        <div id="results" class="part--2__results">
+          <p>
+            <strong>Sum:</strong>
+            <span>${summation(first, second, third)}</span>
+          </p>
+          <p>
+            <strong>Average:</strong>
+            <span>${median(first, second, third)}</span>
+          </p>
+          <p>
+            <strong>Product:</strong>
+            <span>${multiply(first, second, third)}</span>
+          </p>
+          <p>
+            <strong>Smallest Number:</strong>
+            <span>${max(first, second, third)}</span>
+          </p>
+          <p>
+            <strong>Largest Number:</strong>
+            <span>${min(first, second, third)}</span>
+          </p>
+        </div>
         `;
 
-        form.insertAdjacentHTML('afterend', markup)
+        container.insertAdjacentHTML('afterend', result)
+}
+
+function Clear() {
+  const result = document.getElementById("results");
+
+    // Removes result without addressing a parent id
+    if (result.parentNode) {
+      result.parentNode.removeChild(result);
+    }
 }

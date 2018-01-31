@@ -20,12 +20,6 @@ textarea, input {
     outline: 0;
 }
 
-button,
-html [type='button'],
-[type='reset'], [type='submit'],
-textarea, input:not([type=radio]):not([type=checkbox]) {
-    -webkit-appearance: none;
-}
 
 li, ul {
   margin: 0;
