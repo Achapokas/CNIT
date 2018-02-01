@@ -8,6 +8,7 @@ function Calculate() {
 
         // Currying is a process to reduce functions of more than one argument to functions of one argument
         //with the help of lambda calculus.
+        // https://blog.benestudio.co/currying-in-javascript-es6-540d2ad09400
 
         multiply = (n, m, o) => n * m * o;
         summation = (n, m, o) => n + m + o;
@@ -15,8 +16,9 @@ function Calculate() {
         min = (n, m, o) => Math.min(n, m ,o);
         max = (n, m ,o) => Math.max(n, m, o);
 
+        // Template Strings
         const result = `
-        <div id="results" class="part--2__results">
+        <div id="results" class="part__results">
           <p>
             <strong>Sum:</strong>
             <span>${summation(first, second, third)}</span>

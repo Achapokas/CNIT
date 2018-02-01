@@ -12,3 +12,15 @@ input {
 input {
   width: 65px;
 }
+
+table {
+  border: 1px solid black;
+}
+
+  th {
+    font-size: 24px;
+  }
+
+  td {
+    font-size: 20px;
+  }
