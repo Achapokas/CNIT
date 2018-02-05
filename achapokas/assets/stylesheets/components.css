@@ -8,6 +8,10 @@
   width: 820px;
 }
 
+  .part button {
+    margin-top: 16px;
+  }
+
   .part__instructions {
     padding-bottom: 48px;
     font-size: 24px;
@@ -15,11 +19,16 @@
 
   .part--2 {}
 
-    .part--2 button {
-      margin-top: 16px;
-    }
+  .part--5 input {
+    width: 100px;
+  }
 
-.calculation-table {
+  .part--5 table td:last-child {
+    text-align: right;
+  }
+
+.calculation-table,
+.square-table {
   margin-top: 24px;
   width: 465px;
 }
@@ -27,6 +36,15 @@
   .calculation-table td {
     padding: 4px 0 4px 4px;
     width: 60%;
+    border: 1px;
+    border-color: #807F80;
+    border-style: solid;
+  }
+
+  .square-table td,
+  .square-table th {
+    padding: 4px 0 4px 4px;
+    width: 30%;
     border: 1px;
     border-color: #807F80;
     border-style: solid;
@@ -40,6 +58,10 @@
       width: 0;
       border: none;
       background-color: #faf5f0;
+    }
+
+    .square-table td {
+      text-align: center;
     }
 
 

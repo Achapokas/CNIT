@@ -26,22 +26,27 @@ function Calculate() {
         <table id="results" class="calculation-table">
           <tr>
             <td>Sum</td>
+            <td></td>
             <td>${summation(first, second, third)}</td>
           </tr>
           <tr>
             <td>Average</td>
+            <td></td>
             <td>${median(first, second, third)}</td>
           </tr>
           <tr>
             <td>Product</td>
+            <td></td>
             <td>${multiply(first, second, third)}</td>
           </tr>
           <tr>
             <td>Smallest</td>
+            <td></td>
             <td>${min(first, second, third)}</td>
           </tr>
           <tr>
             <td>Largest</td>
+            <td></td>
             <td>${max(first, second, third)}</td>
           </tr>
         </table>
@@ -50,11 +55,14 @@ function Calculate() {
         container.insertAdjacentHTML('afterend', result)
 }
 
-function Clear() {
-  const result = document.getElementById("results");
+document.getElementById("calculator").addEventListener("submit", function(event){
+    event.preventDefault();
+    Calculate();
+});
 
-    // Removes result without addressing a parent id
-    if (result.parentNode) {
-      result.parentNode.removeChild(result);
-    }
-}
+
+$('#reset').on('click', function(event) {
+    event.preventDefault();
+    $('#calculator').find('fieldset input').val("");
+    $('.calculation-table').fadeTo("slow", 0)
+})

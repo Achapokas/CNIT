@@ -13,6 +13,10 @@ input[type="number"] {
   width: 65px;
 }
 
+input[type="number"] {
+  width: 100px;
+}
+
 table,
 td,
 th {
@@ -22,7 +26,9 @@ th {
 table {}
 
   th {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: normal;
+    background-color: #fff;
   }
 
   td {

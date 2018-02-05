@@ -1,7 +1,7 @@
 // Create a webpage that contains a script that calculates the squares and cubes of the numbers 1 to 6 and
 // outputs text that displays (using document.write statements) the resulting values in a table format
 
-const square = `<table>
+const square = `<table class="square-table">
   <thead>
     <tr>
       <th>Number</th>

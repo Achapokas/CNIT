@@ -8,21 +8,38 @@
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/resets.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
   </head>
   <body>
-    <header>
-      <a class="navigation__previous" href="../hw2.html">☜</a>
-      <nav class="navigation">
-        <a href="part_1.html">Part 1</a>
-        <a href="part_2.html">Part 2</a>
-        <a href="part_3.html">Part 3</a>
-        <a href="part_4.html">Part 4</a>
-        <a href="part_5.html">Extra Credit</a>
-      </nav>
-      <h1><code>jQuery</code></h1>
-    </header>
     <main class="page-layout">
-      <h1>Extra Credit</h1>
+      <header>
+        <a class="navigation__previous" href="../hw2.html">☜</a>
+        <nav class="navigation">
+          <a href="part_1.html">Part 1</a>
+          <a href="part_2.html">Part 2</a>
+          <a href="part_3.html">Part 3</a>
+          <a href="part_4.html">Part 4</a>
+          <a href="part_5.html">Extra Credit</a>
+        </nav>
+        <h1><code>Extra Credit</code></h1>
+      </header>
+      <div class="part part--5">
+        <div id="container">
+          <h2 class="part__instructions">Input US Dollars for Conversions:</h2>
+          <form id="calculator">
+            <fieldset>
+              <input type="number" min="0.01" step="0.01" max="2500" value="500" required>
+            </fieldset>
+            <button type="submit" value="Calculate">Calculate</button>
+            <button type="reset" id="reset">Clear</button>
+          </form>
+        </div>
+      </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../assets/javascripts/hw/hw2/part_5.js"></script>
   </body>
 </html>
