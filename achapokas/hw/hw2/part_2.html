@@ -14,9 +14,10 @@
       <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
     </head>
     <body>
-      <main class="page-layout">
+      <main class="page-layout page-layout--parts">
         <header>
-          <nav>
+          <a class="navigation__previous" href="../hw2.html">☜</a>
+          <nav class="navigation">
             <a href="part_1.html">Part 1</a>
             <a href="part_2.html">Part 2</a>
             <a href="part_3.html">Part 3</a>
@@ -25,14 +26,17 @@
           </nav>
           <h1><code>Basic Operations</code></h1>
         </header>
-        <div id="container" class="part part--2">
-          <form id="calculator">
-            <input type="number">
-            <input type="number">
-            <input type="number">
-          </form>
-          <button onclick="Calculate()">Calculate</button>
-          <button onclick="Clear()">Clear</button>
+        <div class="part part--2">
+          <div id="container">
+            <h2 class="part__instructions">Input 3 Numbers to Calculate the Sum, Average &amp; Product:</h2>
+            <form id="calculator">
+              <input type="number" required>
+              <input type="number" required>
+              <input type="number" required>
+            </form>
+            <button onclick="Calculate()">Calculate</button>
+            <button onclick="Clear()">Clear</button>
+          </div>
         </div>
       </main>
       <script src="../../assets/javascripts/hw/hw2/part_2.js"></script>

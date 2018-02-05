@@ -16,7 +16,8 @@
   <body>
     <main class="page-layout">
       <header>
-        <nav>
+        <a class="navigation__previous" href="../hw2.html">☜</a>
+        <nav class="navigation">
           <a href="part_1.html">Part 1</a>
           <a href="part_2.html">Part 2</a>
           <a href="part_3.html">Part 3</a>
@@ -25,16 +26,21 @@
         </nav>
         <h1><code>jQuery</code></h1>
       </header>
-      <div id="container" class="part part--2">
-        <form id="calculator">
-          <input type="number">
-          <input type="number">
-          <input type="number">
-          <input type="number">
-          <input type="number">
-        </form>
-        <button onclick="Calculate()">Calculate</button>
-        <button id="clear">Clear</button>
+      <div class="part part--2">
+        <div id="container">
+          <h2 class="part__instructions">Input 5 Numbers to Count Total Zeros, Positive or Negative Numbers:</h2>
+          <form id="calculator">
+            <fieldset>
+              <input type="number" required>
+              <input type="number" required>
+              <input type="number" required>
+              <input type="number" required>
+              <input type="number" required>
+            </fieldset>
+            <button type="submit" value="Calculate">Calculate</button>
+            <button type="reset" id="reset">Clear</button>
+          </form>
+        </div>
       </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -1,3 +1,7 @@
+// Create a webpage that contains a script that inputs 5 numbers and determines and displays the count of the negative numbers,
+// the number of positive numbers, and the number of zeros. For input, use form text boxes. Your results should be displayed
+// using a form textarea or a div element. Define a 'Click to Fade Results' button on the form.
+
 function Calculate() {
   const form = document.getElementById("calculator"),
         container = document.getElementById('container'),
@@ -20,23 +24,36 @@ function Calculate() {
 
         // Template Strings
         const result = `
-        <div id="results" class="part__results">
-          <p>
-            <span>There are <strong>${greaterThan}</strong> postive Numbers</span>
-          </p>
-          <p>
-            <span>There are <strong>${lessThan}</strong> negative Numbers</span>
-          </p>
-          <p>
-            <span>There are <strong>${equalToZero}</strong> zeros</span>
-          </p>
-        </div>
+        <table class="calculation-table">
+          <tr>
+            <td>Negative</td>
+            <td></td>
+            <td>${lessThan}</td>
+          </tr>
+          <tr>
+          <td>Positive</td>
+          <td></td>
+          <td>${greaterThan}</td>
+          </tr>
+          <tr>
+            <td>Zeros</td>
+            <td></td>
+            <td>${equalToZero}</td>
+          </tr>
+        </table>
         `;
 
         container.insertAdjacentHTML('afterend', result)
 }
 
-$('#clear').on('click', function() {
-    $('#calculator').children().val("");
-    $('#results').fadeTo("slow", 0)
+document.getElementById("calculator").addEventListener("submit", function(event){
+    event.preventDefault();
+    Calculate();
+});
+
+
+$('#reset').on('click', function(event) {
+    event.preventDefault();
+    $('#calculator').find('fieldset input').val("");
+    $('.calculation-table').fadeTo("slow", 0)
 })

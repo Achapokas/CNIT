@@ -21,5 +21,27 @@ header {
 
     header h1 {
       display: inline-block;
+      width: 20%;
+      vertical-align: middle;
       float: right;
     }
+
+
+.navigation {
+  width: 74%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+  .navigation__previous {
+    display: inline-block;
+    padding: 0;
+    width: 5%;
+    font-size: 50px;
+    vertical-align: middle;
+    border: 0;
+  }
+
+  .navigation__previous:hover {
+    font-style: normal;
+  }

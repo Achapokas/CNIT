@@ -21,6 +21,10 @@
   }
 }
 
+.page-layout--parts header h1 {
+  float: none;
+}
+
 .grid {
   padding: 16px 0;
 }
@@ -41,6 +45,6 @@
     .grid-cell {
       display: inline-block;
       width: 49%;
-      vertical-align: top;
+      vertical-align: bottom;
     }
 }

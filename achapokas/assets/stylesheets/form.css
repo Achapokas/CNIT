@@ -9,13 +9,17 @@ input {
   font-family: 'Work Sans', sans-serif;
 }
 
-input {
+input[type="number"] {
   width: 65px;
 }
 
-table {
-  border: 1px solid black;
+table,
+td,
+th {
+  border-collapse: collapse;
 }
+
+table {}
 
   th {
     font-size: 24px;
@@ -23,4 +27,5 @@ table {
 
   td {
     font-size: 20px;
+    background-color: #fff;
   }
