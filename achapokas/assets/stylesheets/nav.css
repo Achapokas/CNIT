@@ -12,11 +12,19 @@ header {
     display: inline-block;
   }
 
-    nav a {
+    nav li {
       display: inline-block;
       padding: 0 16px;
       font-size: 30px;
       border-bottom: 0;
+    }
+
+    nav li a {
+      border-bottom: 0;
+    }
+
+    .navigation__current {
+      border-bottom: 1px solid #303443;
     }
 
     header h1 {
