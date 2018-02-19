@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Assignment: Extra</title>
+    <meta name="description" content="This is a glossary item which contains the second homework assignment">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/resets.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
+
+  </head>
+    <body>
+      <main class="page-layout page-layout--parts">
+        <header>
+          <a class="navigation__previous" href="../hw3.html">☜</a>
+          <nav class="navigation">
+            <ul>
+              <li><a href="part_1.html">Part 1</a></li>
+              <li><a href="part_2.html">Part 2</a></li>
+              <li><a href="part_3.html">Part 3</a></li>
+              <li><a class="navigation__current" href="part_4.html">Part 4</a></li>
+            </ul>
+          </nav>
+          <h1>Extra - Weather</h1>
+        </header>
+          <div class="part extra">
+            <div id="container">
+              <form id="weather">
+                <fieldset>
+                  <input id="zip" type="number" pattern="[0-9]{5}" required>
+                </fieldset>
+                <button type="submit" value="submit">Search</button>
+              </form>
+            </div>
+          </div>
+      </main>
+      <script src="../../assets/javascripts/hw/extra/weather.js"></script>
+    </body>
+</html>

@@ -12,6 +12,10 @@
   font-size: 48px;
 }
 
+.page-layout--section section a {
+  font-size: 48px;
+}
+
 .page-layout--homepage h1 {
   padding: 16px 0 96px;
 }
