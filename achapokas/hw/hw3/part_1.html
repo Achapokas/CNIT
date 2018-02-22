@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
   </head>
   <body>
     <main class="page-layout page-layout--parts">
@@ -24,6 +26,30 @@
           </ul>
         </nav>
         <h1>Student Grades</h1>
+      </header>
+        <div class="part part--1">
+          <form class="grade" id="calculate">
+            <fieldset class="grid">
+              <legend>Student Grades</legend>
+              <a class="grade__details" href="">More details</a>
+              <p class="hide">The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)</p>
+              <div class = "grid-cell">
+                <label for="number">Homework Average:</label>
+                <input type="number" required>
+                <label for="number">Mid-term Exam Score:</label>
+                <input type="number" required>
+              </div>
+              <div class="grid-cell">
+                <label for="number">Final Exam Score:</label>
+                <input type="number" required>
+                <label for="number">ACR:</label>
+                <input type="number" required>
+              </div>
+            </fieldset>
+            <button type="submit" value="Calculate">Calculate</button>
+          </form>
+      </div>
     </main>
+    <script src="../../assets/javascripts/hw/hw3/part_1.js"></script>
   </body>
 </html>

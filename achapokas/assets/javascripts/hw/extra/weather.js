@@ -31,8 +31,7 @@ function weatherResults(response) {
          icon = response.weather[0].icon,
          description = response.weather[0].description,
          container = document.getElementById("container"),
-         current = response.dt,
-         currentConversion = newDate(current),
+         current = new Date()
          sunrise = response.sys.sunrise,
          sunriseConverstion = newDate(sunrise),
          sunset = response.sys.sunset,
@@ -42,28 +41,34 @@ function weatherResults(response) {
            return new Date(time * 1000)
          }
 
-         function sunlight() {
-            console.log(sunriseConverstion)
+         function sunlight(currentTime, sunset) {
+          // Will calculate how much sunlight is left in the day.
+          // Considering building a countdown timer.
 
-            const hours = sunriseConverstion.getHours(),
-                  minutes = sunsetConverstion.getMinutes(),
-                  seconds = sunsetConverstion.getSeconds();
+            const currentHour = currentTime.getHours(),
+                  sunsetHour = sunset.getHours()
+                  currentMinute = currentTime.getMinutes(),
+                  sunsetMinute = sunset.getMinutes(),
+                  hoursLeft = parseInt(sunsetHour - currentHour),
+                  minutesLeft = parseInt(sunsetMinute - currentMinute);
 
-                  console.log(hours);
-                  console.log(minutes);
-                  console.log(seconds);
+                  if (hoursLeft < 0) {
+                    return 0
+                  }
+
+
+                  return hoursLeft + ':' + minutesLeft
          }
-
-         sunlight()
 
   const template = `<div class= "current">
     <img src="http://openweathermap.org/img/w/${icon}.png" alt="${description}">
     <p>${main}</p>
     <p>${temp}</p>
     <p>${speed}</p>
-    <p>${currentConversion}</p>
+    <p>${current}</p>
     <p>${sunriseConverstion}</p>
     <p>${sunsetConverstion}</p>
+    <p>${sunlight(current, sunsetConverstion)}</p>
   </div>`;
 
   container.insertAdjacentHTML('beforeend' ,template);
