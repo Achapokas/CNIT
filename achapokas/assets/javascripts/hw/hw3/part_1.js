@@ -1,31 +1,37 @@
 function final(array, calculate) {
-  var final = parseInt((.5 * array[0]) + (.2 * array[1]) + (.2 * array[2]) + (.1 * array[3]));
+  var calculateAverage = parseInt((.5 * array[0]) + (.2 * array[1]) + (.2 * array[2]) + (.1 * array[3])),
+      average = Math.round(calculateAverage),
+      letter = '',
+      alert = "Student must retake the course";
+
 
   switch(true) {
-    case final >= 90: {
-      console.log("you bad")
+    case average >= 90: {
+      letter = "A"
       break;
     }
-    case final >= 80: {
-      console.log("you alright")
+    case average >= 80: {
+      letter = "B"
       break;
     }
-    case final >= 70: {
-      console.log("your average")
+    case average >= 70: {
+      letter = "C"
       break;
     }
-    case final >= 60: {
-      console.log("that terrible")
+    case average >= 60: {
+      letter = "D"
       break;
     }
-    case final >= 0: {
-      console.log("damn")
+    case average >= 0: {
+      letter = "F"
     }
   }
 
   const grade = `<p class="grade__final"
-  <span>Final Grade: ${final}</span
-  </p>`
+  <span>Grade:${average}</span>
+  <span>Letter: ${letter}</span>
+  ${average <= 60  ? `<p style="color: red">Student must retake the course</p>` : ''}
+  </p>`;
 
   calculate.insertAdjacentHTML('afterend', grade)
 }
@@ -63,6 +69,16 @@ document.getElementById("calculate").addEventListener("submit", function(event){
         inputValues = calculate.querySelectorAll('input');
 
     event.preventDefault();
-
     validate(inputValues, calculate)
 });
+
+// jQuery toggle
+$(function(){
+  var $toggle = $('#calculate').find('a');
+
+  $toggle.on('click', function(event){
+    event.preventDefault();
+    $(this).next().toggleClass('hide');
+  });
+});
+

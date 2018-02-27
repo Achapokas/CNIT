@@ -64,6 +64,11 @@
       text-align: center;
     }
 
+.grade label {
+  padding: 8px 0;
+  display: block;
+}
+
 .grade__details {
   font-size: 12px;
   border: 0;
@@ -79,5 +84,11 @@
   display: none;
 }
 
+.ui-widget-shadow {
+  box-shadow: -2px -2px 2px #807F80 !important;
+}
+  .ui-tooltip-content {
+    font-size: 12px;
+  }
 
 

@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
+
   </head>
   <body>
     <main class="page-layout page-layout--parts">
@@ -24,6 +27,16 @@
           </ul>
         </nav>
         <h1>Celsius and Fahrenheit</h1>
+      </header>
+      <form id="temperature" method="get" action="">
+        <fieldset>
+          <label for="number">Fahrenheit or Celsius</label>
+          <input type="number" required>
+        </fieldset>
+        <button type="submit" id="Celcius" value="Celcius" name="temperature">Celcius</button>
+        <button type="submit" id="Fahrenheit" value="Fahrenheit" name="temperature">Fahrenheit</button>
+      </form>
     </main>
+    <script src="../../assets/javascripts/hw/hw3/part_3.js"></script>
   </body>
 </html>

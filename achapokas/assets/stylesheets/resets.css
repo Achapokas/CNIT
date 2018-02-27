@@ -32,11 +32,6 @@ li, ul {
   list-style: none;
 }
 
-label {
-  padding: 8px 0;
-  display: block;
-}
-
 legend {
   font-size: 16px;
   font-weight: bold;

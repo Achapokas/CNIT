@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   </head>
   <body>
     <main class="page-layout page-layout--parts">
@@ -24,6 +27,27 @@
           </ul>
         </nav>
         <h1>Salespeople</h1>
+      </header>
+        <form id="sales">
+          <fieldset>
+            <legend>Sales Commission</legend>
+            <label for="text">Salesperson</label>
+            <input id="alert" title="Please make sure that the salesperson's name is spelled correctly." type="text" required>
+            <legend>Input the number of items sold for each item number</legend>
+            <label for="number">Item 1</label>
+            <input type="number" required>
+            <label for="number">Item 2</label>
+            <input type="number" required>
+            <label for="number">Item 3</label>
+            <input type="number" required>
+            <label for="number">Item 4</label>
+            <input type="number" required>
+          </fieldset>
+          <button type="submit" value="Calculate">Submit</button>
+        </form>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../../assets/javascripts/hw/hw3/part_2.js"></script>
   </body>
 </html>

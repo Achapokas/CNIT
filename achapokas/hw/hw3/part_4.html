@@ -9,7 +9,10 @@
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
+
   </head>
   <body>
     <main class="page-layout page-layout--parts">
@@ -24,6 +27,16 @@
           </ul>
         </nav>
         <h1>Math Education</h1>
+      </header>
+      <form id="math" method="get" action="">
+        <fieldset>
+          <input type="number" disabled="true">
+          <input type="number" disabled="true">
+          <input type="number" required>
+        </fieldset>
+        <button id="submit" type="submit" value="submit">Submit</button>
+      </form>
     </main>
+    <script src="../../assets/javascripts/hw/hw3/part_4.js"></script>
   </body>
 </html>
