@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment: Homework 2 - Looping Statements</title>
+    <meta name="description" content="This is a glossary item which contains the second homework assignment">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/resets.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
+  </head>
+  <body>
+    <main class="page-layout page-layout--parts">
+      <header>
+        <a class="navigation__previous" href="../hw4.html">☜</a>
+        <nav class="navigation">
+          <ul>
+            <li><a href="part_1.html">Part 1</a></li>
+            <li><a href="part_2.html">Part 2</a></li>
+            <li><a class="navigation__current" href="part_3.html">Part 3</a></li>
+          </ul>
+        </nav>
+        <h1>Mail-Order</h1>
+      </header>
+      <form id="mail" name="mail">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>Product #</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="number" name="product" value=1 disabled></td>
+              <td><input type="number" name="quanity" required></td>
+              <td><input type="number" name="price" disabled></td>
+              <td><input type="number" name="amount" disabled></td>
+            </tr>
+            <tr>
+              <td><input type="number" name="product" value=2 disabled></td>
+              <td><input type="number" name="quanity"></td>
+              <td><input type="number" name="price" disabled></td>
+              <td><input type="number" name="amount" disabled></td>
+            </tr>
+            <tr>
+              <td><input type="number" name="product" value=3 disabled></td>
+              <td><input type="number" name="quanity"></td>
+              <td><input type="number" name="price" disabled></td>
+              <td><input type="number" name="amount" disabled></td>
+            </tr>
+            <tr>
+              <td><input type="number" name="product" value=4 disabled></td>
+              <td><input type="number" name="quanity"></td>
+              <td><input type="number" name="price" disabled></td>
+              <td><input type="number" name="amount" disabled></td>
+            </tr>
+            <tr>
+              <td><input type="number" name="product" value=5 disabled></td>
+              <td><input type="number" name="quanity"></td>
+              <td><input type="number" name="price" disabled></td>
+              <td><input type="number" name="amount" disabled></td>
+            </tr>
+            <tr>
+              <td colspan="3">Total Amount Sold:</td>
+              <td disabled><input name="total" type="number" disabled></td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit">Calculate</button>
+        <button type="reset">Reset</button>
+      </form>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../../assets/javascripts/hw/hw4/part_3.js"></script>
+  </body>
+</html>

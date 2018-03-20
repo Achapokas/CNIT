@@ -60,8 +60,11 @@ function triggerQuestion() {
 
   if (submitButton) {
     submitButton.addEventListener("click", function(event){
-      mathForm.reset();
-      randomNumbers()
+      event.preventDefault();
+
+       mathForm.reset();
+       validateArray = [];
+       randomNumbers();
     })
   }
 

@@ -1,0 +1,33 @@
+
+table {
+  margin: 16px 0;
+  border: 1px solid #000;
+  border-collapse:collapse
+}
+
+  thead {}
+
+    th {
+      padding: 4px;
+      color: #fff;
+      font-size: 14px;
+      border-right: 1px solid black;
+      background-color: #7e0308;
+    }
+
+  tbody {}
+
+    td {
+      font-size: 14px;
+      font-weight: bold;
+      border-right: 1px solid black;
+      background-color: transparent;
+    }
+
+    tr:nth-child(2n - 1) {
+      background-color: #fd7f56;
+    }
+
+    tr:nth-child(2n) {
+      background-color: #fffd38;
+    }

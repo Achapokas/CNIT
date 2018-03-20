@@ -32,19 +32,53 @@
           <fieldset>
             <legend>Sales Commission</legend>
             <label for="text">Salesperson</label>
-            <input id="alert" title="Please make sure that the salesperson's name is spelled correctly." type="text" required>
+            <input id="alert" title="Please make sure that the salesperson's name is spelled correctly." type="text" name="name" required>
             <legend>Input the number of items sold for each item number</legend>
             <label for="number">Item 1</label>
-            <input type="number" required>
+            <input type="number" name="item1" required>
             <label for="number">Item 2</label>
-            <input type="number" required>
+            <input type="number" name="item2" required>
             <label for="number">Item 3</label>
-            <input type="number" required>
+            <input type="number" name="item3" required>
             <label for="number">Item 4</label>
-            <input type="number" required>
+            <input type="number" name="item4" required>
           </fieldset>
           <button type="submit" value="Calculate">Submit</button>
         </form>
+        <table class="square-table">
+          <thead>
+            <th>Item #</th>
+            <th>Price</th>
+            <th>Number Sold</th>
+            <th>Total</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>239.99</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>129.75</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>99.95</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>350.89</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
