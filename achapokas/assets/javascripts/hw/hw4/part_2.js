@@ -45,7 +45,7 @@ for(var i = 0; i < annualRateArray.length; i++) {
       <tr>
         <td>${year}</td>
         <td>${annualInterest(year)}</td>
-        <td>${annualRateArray[i]}</td>
+        <td>${percentageArray[i]}</td>
       </tr>`
     ).join('')}
     </tbody>

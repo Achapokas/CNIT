@@ -3,6 +3,10 @@
     #FORM
 \*------------------------------------*/
 
+legend {
+  padding: 8px 0;
+}
+
 input {
   padding: 10px;
   font-size: 30px;
@@ -15,6 +19,20 @@ input[type="number"] {
 
 input[type="number"] {
   width: 100px;
+}
+
+input:invalid {
+    border-color: #DD2C00;
+}
+
+fieldset {
+  padding: 16px 0;
+}
+
+select {
+  margin-top: 8px;
+  background-color: #fff;
+  font-size: 16px;
 }
 
 table,

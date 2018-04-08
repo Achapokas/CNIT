@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment: Homework 5 - Arrays</title>
+    <meta name="description" content="This is a glossary item which contains the second homework assignment">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/resets.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/page_layout.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/typography.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/nav.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/form.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/components.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
+  </head>
+  <body>
+    <main class="page-layout page-layout--parts">
+      <header>
+        <a class="navigation__previous" href="../hw5.html">☜</a>
+        <nav class="navigation">
+          <ul>
+            <li><a class="navigation__current" href="part_1.html">Part 1</a></li>
+            <li><a href="part_2.html">Part 2</a></li>
+            <li><a href="part_3.html">Part 3</a></li>
+          </ul>
+        </nav>
+        <h1>Ice Cream! 🍦</h1>
+      </header>
+      <form name="ice-cream">
+        <fieldset>
+          <label for="name">First Name:<abbr title="This field is mandatory">*</abbr></label>
+          <input type="text" id="name" name="name" placeholder="name" pattern="[A-Za-z]{1,15}" required>
+        </fieldset>
+        <fieldset>
+          <legend>What is your favorite type of frozen confectionary?<abbr title="This field is mandatory">*</abbr></legend>
+          <input type="radio" id="r1" name="choice" value="Ice Cream" required>
+          <label for="r1">Ice cream</label>
+          <input type="radio" id="r2" name="choice" value="Gelato" required>
+          <label for="r2">Gelato</label>
+          <input type="radio" id="r3" name="choice" value="Frozen Yogurt" required>
+          <label for="r3">Frozen Yogurt</label>
+        </fieldset>
+        <fieldset name="checkboxs">
+          <p>What are your favorite flavors? (choose at least one)</p>
+          <input type="checkbox" name="flavors[]" value="chocolate">
+          <label name="chocolate">chocolate</label>
+          <input type="checkbox" name="flavors[]" value="strawberry">
+          <label name="strawberry">strawberry</label>
+          <input type="checkbox" name="flavors[]" value="rocky road">
+          <label name="rocky road">rocky road</label>
+          <input type="checkbox" name="flavors[]" value="peanut-butter brittle">
+          <label name="peanut-butter brittle">peanut butter brittle</label>
+        </fieldset>
+        <fieldset>
+          <legend>When do you normally eat ice cream?<abbr title="This field is mandatory">*</abbr></legend>
+          <select name="time" required>
+            <option value="">Please select</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="../../assets/javascripts/hw/hw5/part_1.js"></script>
+  </body>
+</html>
