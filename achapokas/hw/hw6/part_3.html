@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Assignment: Homework 5 - Arrays</title>
+    <title>Assignment: Homework 6 - Objects</title>
     <meta name="description" content="This is a glossary item which contains the second homework assignment">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
     <link rel="stylesheet" type="text/css" href="../../assets/stylesheets/button.css">
   </head>
   <body>
-    <main class="page-layout page-layout--parts">
+    <main id="insert" class="page-layout page-layout--parts">
       <header>
-        <a class="navigation__previous" href="../hw5.html">☜</a>
+        <a class="navigation__previous" href="../hw6.html">☜</a>
         <nav class="navigation">
           <ul>
             <li><a href="part_1.html">Part 1</a></li>
@@ -24,22 +24,18 @@
             <li><a class="navigation__current" href="part_3.html">Part 3</a></li>
           </ul>
         </nav>
-        <h1>Menus</h1>
+      <h1>Strings &amp; Integers</h1>
       </header>
-      <h3>Directions</h3>
-      <p class="hide">Query by state or abbr</p>
-      <form name="census">
-        <input type="text" id="state" name="state" aria-required="true" aria-invalid="false" placeholder="name" pattern="[A-Za-z]{1,15}">
-        <button>state info</button>
+      <form name="telephone">
         <fieldset>
-          <input type="text" name="full" placeholder="State Name" disabled>
-          <input type="text" name="abbr" placeholder="State Abbr" disabled>
-          <input type="text" name="capital" placeholder="Capital" disabled>
-          <input type="text" name="population" placeholder="Population" disabled>
+          <label for="telephone">Please include telephone number via the following format (215) 999-9999<abbr title="This field is mandatory">*</abbr></label>
         </fieldset>
+        <input id="telephone" name="telephone" type="telephone" placeholder="(215) 867-5309" minlength="14" maxlength="14" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" required>
+        <button>submit</button>
       </form>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../../assets/javascripts/hw/hw5/part_3.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <script src="../../assets/javascripts/hw/hw6/part_3.js"></script>
   </body>
 </html>
